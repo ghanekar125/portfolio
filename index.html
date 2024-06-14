@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Portfolio</title>
+	
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	
+	<style>
+		*{margin: 0;
+		  padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body{
+			font-family:"Arial", "sans-serif";
+		}
+		
+		.container{
+			/*background:url("Rainbow_Nebula_4K_Motion_Background.mp4");*/
+		background-image:url("2.png");
+			background-position: center;
+			width: 1400px;
+			height: 700px;			
+			position: absolute;
+			background-size: cover;
+			}
+		
+		 ul{
+       		 padding: 0;
+       		 list-style: none;          
+   			}
+		
+    	ul li{
+        	display: inline;
+        	padding: 0 20px;
+        	border-right: 1px solid #000000;
+    		 }
+		
+    	li:fisrt-child {
+        	border-right: none;
+    		 }
+		
+		li:last-child {
+        	border-right: none;
+    		 }
+		
+		ul li a{
+			text-decoration: none;
+			color: black;
+			 }
+		
+		ul li a:hover{
+			color: white;
+			}
+		
+		h1{cursor: pointer;
+			margin-top: 0%;
+			margin-left: -2%;
+			font-size: 30px;
+			}
+		
+		.navbar{
+			align-items: center;
+			display: flex;
+			width: 86%;
+			margin: auto;
+			padding: 15px 0px;
+			justify-content: space-between;
+			}
+		.info{
+			margin-top: 6%;
+			margin-left: 7%;
+		}	
+		
+		.info h1{
+			font-size: 65px;
+			margin-left: 0%;
+		}
+		.info h3{
+			font-size: 18px;
+			letter-spacing: 1px;
+			line-height: 24px;
+		}
+		.info span{
+			color: #E6683B;
+		}
+		
+		.info a{
+			color: black;
+			text-decoration: none;
+			background-color:#1B3196;
+			margin: 26px 0;
+			padding: 10px 18px;
+			border-radius: 10px;
+			display: inline-block;
+			transition: 2s ease;	
+		}
+		
+		.info a {
+  height: 80px;
+  width:120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.2rem sans-serif;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.info a::before,
+.info a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: deeppink;
+  transition: all 250ms ease-in-out;
+}
+
+.info a::before {
+  width: 2px;
+  height: 80px;
+  box-shadow: 120px 0 deeppink;
+}
+
+.info a::after {
+  height: 2px;
+  width: 120px;
+  box-shadow: 0 80px deeppink;
+}
+
+.info a:hover::before {
+  left: -10px;
+  box-shadow: 140px 0 deeppink;
+}
+
+.info a:hover::after {
+  top: -10px;
+  box-shadow: 0 100px deeppink;
+}
+		
+		.info a:hover{
+		background-color:#0076C1;
+			color: white;		
+		}
+		.image
+		{
+			position: absolute;
+			width: 50px;
+			top: 550px;
+			height: 50px;
+			right:800px;
+			bottom: 0;
+		}
+		.image img{
+			position: absolute;
+			height: 500px;
+			left:300px;
+			bottom: 0;
+		}
+		
+		.icons img{
+			width: 50px;
+			height: 50px;
+			margin-left: 35px;
+		}
+		.icons a {
+			color: crimson;
+		}
+		
+		.container2
+		{
+			position: absolute;
+			background:repeating-linear-gradient(#017098,#00d4ff);
+			width: 1400px;
+			height: 650px;
+		}
+		.h1{
+			margin-left: 400px;
+			color: #FFBB2A;
+			font-size: 50px;
+		}
+		.h2{
+			margin-left: 550px;
+			color: #FFBB2A;
+			font-size: 30px;
+		}
+		.image2 img
+		{
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			margin-left:430px;
+		}
+		p{
+			text-decoration: none;
+		}
+		.btn{
+			display: inline-block;
+			padding:20px;
+			background: #f6f6f6;
+			font-size: 20px;
+			text-decoration: none;
+			color: #7E2C2E;
+			border-radius: 10px;
+			margin-left: 620px;
+			margin-bottom: 5px;
+			box-shadow: 1px;
+			}
+		
+		button{
+			display: inline-block;
+			padding:10px;
+			background: #f6f6f6;
+			font-size: 15px;
+			text-decoration: none;
+			color: #7E2C2E;
+			border-radius: 10px;			
+			margin-bottom: 5px;
+			}
+		.hh1{
+			background-color:#074FB1;
+			padding: 10px;
+			font-size: 40px;
+			color: white;
+			}
+		
+		.cnt{
+			background-size: contain;
+			margin-top: 600px;			
+			}
+		
+		table{
+			color: black;
+			background-color: transparent;
+			border: 0px;	
+			float: left;
+			position: absolute;
+			margin-left: 6px;
+			}
+		th {
+			font-size: 30px;
+			}
+		
+		a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color:#1DB9CC;
+  border-top: 1px solid #e5e5e5;
+  margin-top:3850px;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color:#000000;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color:#81C0EF;
+  border-radius: 100px;
+  color: #000000;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+		.footer__btn:hover{
+			background-color:#0C4ED1 ;
+		}
+
+.footer ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #000000;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color:#000000;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #000000;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+		
+	</style>
+	
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<h1>Vishakha </h1>	
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="#cv">CV</a></li>
+					<li><a href="#sk">SKILL</a></li>
+					<li><a href="#wk">MY WORK</a></li>
+					<li><a href="#cm">CONTACT ME</a></li>
+				</ul>
+		</div>
+		<div class="info">
+			<h2>Hi,I'm Vishakha</h2>
+			<h1>Graphic Designer</h1>			
+			<h3>I am a skilled graphic designer passionate about <br>
+creating impactful visuals that elevate your brand<br>
+ and resonate with your audience. Whether you<br>
+ need a website refresh, engaging social media<br>
+ graphics, or eye-catching marketing materials,<br>
+ I can craft unique designs that 
+achieve your goals.</h3>
+			<a href="">Hire Me</a>
+		</div>	
+		
+		<div class="icons"> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 <a href=""><img src="instagram.png"></a>
+			<a href=""><img src="telegram.png"></a>
+			<a href=""><img src="whatsapp.png"></a>
+		</div>
+		<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>	
+	
+	<div class="container2">
+		<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		<div class="about">
+	
+			<h3> </h3>
+		<div class="image2">
+				<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		</div>			
+		
+		<p>&nbsp;                         </p>
+		<center>
+			<p>
+			<h1 class="hh1" id="cv">Here's what I can offer you:</h1><br><br>
+
+			<h2><b><button>Website Design</button></b></h2>   <h4>I create user-friendly and visually appealing websites that reflect your brand identity and drive results.<br><br></h4>
+
+			<h2><b><button>Branding & Identity</button></b></h2>  <h4>Develop a cohesive brand voice through logos, color palettes, and typography that leave a lasting impression.<br><br></h4>
+
+			<h2><b><button>Marketing Materials</button> </b></h2> <h4>Design captivating brochures, flyers, presentations, and other marketing materials to grab attention and convert leads.<br><br></h4>
+
+			<h2><b><button>Social Media Graphics</button></b></h2>  <h4>Create eye-catching social media graphics that stop the scroll and get you noticed.</h4></p></center>
+		
+			<p>&nbsp;                         </p>
+		<p>&nbsp;                         </p>
+		<a href="" class="btn" > <center>Download CV</center> </a>
+		</div>
+	</div>
+	
+	<div class="cnt"> <br>		
+		<center><img src="skill.png" width="1000" height="850" id="sk"></center>	
+	</div><br>
+	<br>
+			<div class="tbl" id="wk">
+		<table border="1" align="center" cellpadding="23" cellspacing="30" >
+			
+			<tr><th colspan="3" height="60"><center><b>MY WORK</b></center></th></tr>
+			<td><a href=""><img src="brocher.jpg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="company flier2.jpg" width="350" height="400"></a> </td>
+			<td><a href=""><img src="dog.jpg" width="350" height="350"></a> </td>
+			<tr>
+			<td><a href=""><img src="flower.jpeg" width="400" height="350"></a> </td>		
+			<td><a href=""><img src="double explosure.jpg" width="400" height="350"></a></td>
+			<td><a href=""><img src="womanjungle..jpg" width="350" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="GLITCG.jpeg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="glitch dog.jpeg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="jewllery-4.jpg" width="340" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="mate painting 1.jpeg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="mate painting 2.jpeg" width="330" height="350"></a> </td>
+			<td><a href=""><img src="mate paninting3.jpeg" width="340" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="movie poster 2.jpg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="movie poster-.jpg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="movie poster-Recovered.jpg" width="350" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="neon.jpg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="photomanupulation 2.jpg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="photomanupulation 3.jpg" width="350" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="sayalipng.png" width="350" height="350"></a> </td>
+			<td><a href=""><img src="soultree.jpg" width="340" height="340"></a> </td>
+			<td><a href=""><img src="WhatsApp Image 2023-09-14 at 9.55.32 PM.jpeg" width="320" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="trifold.jpg" width="350" height="350"></a> </td>
+			<td><a href=""><img src="trifold2.jpg" width="380" height="350"></a> </td>
+			<td><a href=""><img src="WORLD.jpg" width="380" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="wedding.png" width="400" height="350"></a> </td>
+			<td><a href=""><img src="wedding2.jpg" width="400" height="350"></a> </td>
+			<td><a href=""><img src="wallpaper-1.jpg" width="400" height="350"></a> </td>
+			</tr>
+			<tr>
+			<td><a href=""><img src="wedding-2.jpg" width="400" height="150"></a> </td>
+			<td><a href=""><img src="wedding-3.jpg" width="400" height="150"></a> </td>
+			<td><a href=""><img src="wedding-4.jpg" width="400" height="150"></a> </td>
+			</tr>			
+		</table>
+	</div>
+	
+	<footer class="footer" id="cm">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Something</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      5534 Somewhere In. The World 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+<br>
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+<br>
+        <li>
+          <a href="#">Print</a>
+        </li>
+            <br>
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    <br>
+    <li class="nav_item nav_item--extra">
+      <h2 class="nav__title">Technology</h2>
+      
+      <ul class="nav_ul nav_ul--extra">
+        <li>
+          <a href="#">Hardware Design</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Automation</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+    <br>
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      <br>
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2019 Something. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    </div>
+  </div>
+</footer>
+	
+	</div>
+</body>
+</html>
